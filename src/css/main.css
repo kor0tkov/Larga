@@ -30,10 +30,10 @@ html {
 }
 body {
   font-family: "akrobat-regular", sans-serif;
-  background-color: #F8F5F5;
+  background-color: rgb(245, 245, 245);
 }
 
-h2 {
+h22 {
   font-family: "akrobat-bold", sans-serif;
 }
 
