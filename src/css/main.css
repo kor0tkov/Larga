@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "akrobat-regular";
+  src: url('../../static/fonts/Akrobat-Regular.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "akrobat-extrabold";
+  src: url('../../static/fonts/Akrobat-ExtraBold.ttf') format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "akrobat-light";
+  src: url('../../static/fonts/Akrobat-Light.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "akrobat-semibold";
+  src: url('../../static/fonts/Akrobat-SemiBold.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  font-family: "akrobat-regular", sans-serif;
+  background-color: #F8F5F5;
+}
+
+h2 {
+  font-family: "akrobat-bold", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul, li, p, h2, h3 {
+  margin: 0;
+}
+
+main, header {
+  padding: 0 95px;
+}
