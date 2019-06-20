@@ -56,12 +56,13 @@
   z-index: 2;
 }
 .digital-transform_title {
-  font-size: 56px;
+  font-size: 58px;
   width: 540px;
   list-style-type: circle;
   text-transform: uppercase;
   padding: 0 0 20px 0;
   letter-spacing: 4px;
+  line-height: 67px;
 }
 .digital-transform_title::before {
   content: '';
@@ -93,10 +94,10 @@
   padding: 0 0 0 55px;
 }
 .digital-transform_list:first-child {
-  width: 250px;
+  width: 220px;
 }
 .digital-transform_list:last-child {
-  width: 250px;
+  width: 215px;
   padding: 0 0 0 40px;
   line-height: 20px;
 }
@@ -141,20 +142,21 @@
   transform: rotate(-45deg)
 }
 .digital-transform_mask-left {
-  background-image: url('../../static/img/digital-transform/mask.PNG');
+  background-image: url('../../static/img/digital-transform/mask.png');
   position: absolute;
   width: 200px;
   height: 250px;
   top: 5%;
-  left: -11%;
+  left: -9%;
 }
 .digital-transform_mask-right {
-  background-image: url('../../static/img/digital-transform/mask.PNG');
+  background-image: url('../../static/img/digital-transform/mask.png');
   width: 270px;
   height: 220px;
   position: absolute;
-  right: -9%;
-  top: 35%;
+  right: -10%;
+  top: 36%;
+  z-index: 2;
 }
 .digital-transform_blue-block_border-left {
   left: 50%;
