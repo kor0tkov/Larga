@@ -83,8 +83,8 @@
   color: white;
   border-bottom: 1px solid transparent;
   border-color: white;
-  letter-spacing: 1px;
-  padding: 18px 0 0 0;
+  padding: 9px 0 0 0;
+  line-height: 22px;
 }
 .digital-transform_item:first-child {
   padding: 0;
