@@ -42,8 +42,9 @@ li {
   font-family: "akrobat-semibold";
 }
 
-ul, li, p, h2, h3 {
+ul, li, p, h2, h3, span {
   margin: 0;
+  padding: 0;
 }
 
 main, header {

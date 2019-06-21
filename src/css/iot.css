@@ -1,0 +1,50 @@
+.iot {
+  width: 1280px;
+  height: 557px;
+  margin: 0 0 75px 0;
+  position: relative;
+  left: -95px;
+}
+.iot_darkblue-block {
+  width: 845px;
+  height: 557px;
+  background-color: #012950;
+  position: absolute;
+  left: 0 ;
+}
+.iot_darkblue-block_image {
+  position: absolute;
+  z-index: 1;
+  top: 60px;
+  left: 645px;
+}
+.iot_darkblue-block_content {
+  padding: 60px 255px 60px 95px;
+}
+.iot_darkblue-block_content_title {
+  font-size: 32px;
+  color: white;
+  padding: 0 0 20px 0;
+}
+.iot_darkblue-block_content_subtitle {
+  font-size: 18px;
+  color: white;
+  font-weight: normal;
+  padding: 0 0 20px 0;
+}
+.iot_darkblue-block_content_text {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 24px;
+  font-weight: lighter;
+  color: white;
+  padding: 0 0 40px 0;
+}
+.iot_darkblue-block_mask {
+  background-image: url('../../static/img/digital-transform/mask.png');
+  width: 333px;
+  height: 286px;
+  position: absolute;
+  right: -50%;
+  bottom: 30px;
+}
