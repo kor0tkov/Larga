@@ -30,11 +30,10 @@
   height: 37px;
 }
 .border-gray {
-  content: '';
   width: 2px;
-  background-color: #B4C2C6;
+  background-color: rgba(180, 194, 198, 0.644);
   position: absolute;
 }
 .navigation_border {
-  height: 137px;
+  height: 1556px;
 }
