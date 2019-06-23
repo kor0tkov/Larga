@@ -48,3 +48,13 @@
   right: -50%;
   bottom: 30px;
 }
+.iot_border-left {
+  height: 720px;
+  left: 95px;
+  top: -65px;
+}
+.iot_border-middle {
+  height: 580px;
+  top: 60px;
+  right: 199px;
+}

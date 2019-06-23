@@ -51,3 +51,12 @@
   left: 0;
   top: -6px;
 }
+.partners_border-left {
+  height: 447px;
+  top: 243px;
+}
+.partners_border-right {
+  height: 620px;
+  right: -2px;
+  top: -100px;
+}

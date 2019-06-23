@@ -37,7 +37,7 @@
 .videoserver_white-block_image {
   position: absolute;
   z-index: 2;
-  left: -341px;
+  left: -340px;
   top: 35px;
 }
 .videoserver_white-block_button {
@@ -50,4 +50,14 @@
   height: 286px;
   position: absolute;
   bottom: 0;
+}
+.videoserver_border-middle {
+  height: 530px;
+  left: 210px;
+  top: 50px;
+}
+.videoserver_border-right {
+  height: 565px;
+  top: -65px;
+  right: 84px;
 }

@@ -23,16 +23,16 @@
   border-left: 2px solid #6E95BA;
 }
 .feedback_form {
-  width: 549px;
+  width: 551px;
   display: flex;
   flex-direction: column;
-  padding: 0 0 170px 0;
+  padding: 0 0 140px 0;
 }
 .feedback_form_input {
   outline: none;
   -webkit-appearance: none;
   background-color: #012950;
-  width: 549px;
+  width: 529px;
   height: 56px;
   margin-bottom: 20px;
   border: 1px solid #6E95BA;
@@ -64,4 +64,9 @@
 }
 .feedback_footer_text {
   color: #fff;
+}
+.feedback_border-right {
+  height: 680px;
+  right: 95px;
+  top: -150px;
 }
