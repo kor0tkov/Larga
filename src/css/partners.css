@@ -1,12 +1,13 @@
 .partners {
   width: 1195px;
   height: 520px;
-  position: absolute;
-  left: 0;
+  position: relative;
+  left: -95px;
   background-color: #A3D4F2;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
+  margin-bottom: 65px;
 }
 .partners_title {
   position: absolute;
