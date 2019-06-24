@@ -1,0 +1,10 @@
+.videoblock-1_1c {
+  background-color: #fff;
+}
+.videoblock-1_business {
+  background-color: rgb(245, 245, 245);
+}
+.videoblock-1_1c, .videoblock-1_business {
+  border: 1px solid;
+  border-color: rgba(180, 194, 198, 0.644);
+}

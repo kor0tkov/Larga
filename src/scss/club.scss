@@ -1,0 +1,106 @@
+.club-wrapper {
+  position: relative;
+  margin: 0 0 50px;
+}
+.club {
+  width: 1184px;
+  height: 735px;
+  background-color: #EAEAEA;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: baseline;
+  @media (max-width: 415px) {
+    width: 380px;
+    height: auto;
+  }
+  &_title {
+    font-size: 87px;
+    color: #F7F7F7;
+    text-transform: uppercase;
+    width: 100%;
+    height: 120px;
+    margin: -15px 0 15px -5px;
+    letter-spacing: 10px;
+    @media (max-width: 415px) {
+      font-size: 52px;
+      margin: -8px 0 33px -2px;
+    }
+  }
+  &_blue-block {
+    width: 550px;
+    height: 340px;
+    background-color: #A3D4F2;
+    @media (max-width: 415px) {
+      width: 345px;
+      height: 195px;
+      padding: 15px 27px 18px 34px;
+    }
+    &_subtitle {
+      font-size: 46px;
+      color: #012950;
+      padding: 30px 30px 0 60px;
+      letter-spacing: 5px;
+      @media (max-width: 415px) {
+        font-size: 28px;
+        line-height: 38px;
+        padding: 0;
+      }
+      &::before {
+        content: '';
+        width: 36px;
+        height: 5px;
+        background-color: #012950;
+        position: absolute;
+        top: 170px;
+        left: 0;
+        @media (max-width: 415px) {
+          width: 20px;
+          height: 2px;
+          top: 175px;
+        }
+      }
+    }
+  }
+  &_text-wrapper {
+    width: 480px;
+    margin-right: 90px;
+    @media (max-width: 415px) {
+      margin: 0;
+      padding: 25px 35px 75px 30px;
+    }
+  }
+  &_mask {
+    background-image: url('../../static/img/digital-transform/mask.png');
+    width: 287px;
+    height: 200px;
+    position: absolute;
+    left: -95px;
+    bottom: 5px;
+    @media (max-width: 415px) {
+      width: 156px;
+      height: 212px;
+      right: 0;
+      bottom: -150px;
+      left: 73%;
+      z-index: 2;
+    }
+  }
+  &_border-left {
+    height: 800px;
+    top: -65px;
+  }
+  &_border-middle {
+    height: 1562px;
+    top: 120px;
+    right: 550px;
+    z-index: 1;
+  }
+}
+
+
+
+
+
+
+

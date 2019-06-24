@@ -1,15 +1,28 @@
 .club-wrapper {
   position: relative;
-  margin: 0 0 75px;
+  margin: 0 0 50px;
 }
+
 .club {
   width: 1184px;
   height: 735px;
   background-color: #EAEAEA;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: baseline;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: baseline;
+      align-content: baseline;
+}
+@media (max-width: 415px) {
+  .club {
+    width: 380px;
+    height: auto;
+  }
 }
 .club_title {
   font-size: 87px;
@@ -20,11 +33,36 @@
   margin: -15px 0 15px -5px;
   letter-spacing: 10px;
 }
+@media (max-width: 415px) {
+  .club_title {
+    font-size: 52px;
+    margin: -8px 0 33px -2px;
+  }
+}
+.club_blue-block {
+  width: 550px;
+  height: 340px;
+  background-color: #A3D4F2;
+}
+@media (max-width: 415px) {
+  .club_blue-block {
+    width: 345px;
+    height: 195px;
+    padding: 15px 27px 18px 34px;
+  }
+}
 .club_blue-block_subtitle {
   font-size: 46px;
   color: #012950;
   padding: 30px 30px 0 60px;
   letter-spacing: 5px;
+}
+@media (max-width: 415px) {
+  .club_blue-block_subtitle {
+    font-size: 28px;
+    line-height: 38px;
+    padding: 0;
+  }
 }
 .club_blue-block_subtitle::before {
   content: '';
@@ -35,22 +73,40 @@
   top: 170px;
   left: 0;
 }
-.club_blue-block {
-  width: 550px;
-  height: 340px;
-  background-color: #A3D4F2;
+@media (max-width: 415px) {
+  .club_blue-block_subtitle::before {
+    width: 20px;
+    height: 2px;
+    top: 175px;
+  }
 }
 .club_text-wrapper {
   width: 480px;
   margin-right: 90px;
 }
+@media (max-width: 415px) {
+  .club_text-wrapper {
+    margin: 0;
+    padding: 25px 35px 75px 30px;
+  }
+}
 .club_mask {
-  background-image: url('../../static/img/digital-transform/mask.png');
+  background-image: url("../../static/img/digital-transform/mask.png");
   width: 287px;
   height: 200px;
   position: absolute;
   left: -95px;
   bottom: 5px;
+}
+@media (max-width: 415px) {
+  .club_mask {
+    width: 156px;
+    height: 212px;
+    right: 0;
+    bottom: -150px;
+    left: 73%;
+    z-index: 2;
+  }
 }
 .club_border-left {
   height: 800px;
@@ -59,6 +115,6 @@
 .club_border-middle {
   height: 1562px;
   top: 120px;
-  right: 522px;
+  right: 550px;
   z-index: 1;
 }

@@ -1,9 +1,22 @@
+@media (max-width: 415px) {
+  .videoblock-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 .videoblock-1_1c {
   background-color: #fff;
 }
+
 .videoblock-1_business {
-  background-color: rgb(245, 245, 245);
+  background-color: whitesmoke;
 }
+
 .videoblock-1_1c, .videoblock-1_business {
   border: 1px solid;
   border-color: rgba(180, 194, 198, 0.644);

@@ -1,0 +1,16 @@
+.videoblock-3 {
+  width: 1100px;
+  height: 730px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 65px 0;
+}
+.videoblock-3_mask {
+  width: 348px;
+  height: 147px;
+  background-image: url('../../static/img/digital-transform/mask.png');
+  position: absolute;
+  right: -65px;
+  bottom: 45px;
+}

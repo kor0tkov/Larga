@@ -1,0 +1,89 @@
+.partners {
+  width: 1195px;
+  height: 520px;
+  position: relative;
+  left: -95px;
+  background-color: #A3D4F2;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-bottom: 50px;
+  @media (max-width: 415px)  {
+    width: 380px;
+    height: auto;
+    left: -35px;
+    padding-bottom: 80px;
+  }
+  &_title {
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    font-size: 87px;
+    color: #F7F7F7;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    @media (max-width: 415px)  {
+      font-size: 52px;
+      right: -13px;
+      top: -9px;
+    }
+  }
+  &_content-mts {
+    width: 480px;
+    padding: 25px 0 0 95px;
+    @media (max-width: 415px)  {
+      padding: 110px 35px 0 35px;
+    }
+  }
+  &_content-mircod {
+    width: 480px;
+    padding: 25px 0 0 75px;
+    @media (max-width: 415px)  {
+      padding: 110px 35px 0 35px;
+    }
+  }
+  &_content_image {
+    padding: 0 0 35px;
+  }
+  &_content_title {
+    padding: 0 0 15px 0;
+  }
+  &_mask-top {
+    background-image: url('../../static/img/digital-transform/mask.png');
+    width: 590px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: -50px;
+    @media (max-width: 415px)  {
+      display: none;
+    }
+  }
+  &_mask-bottom {
+    background-image: url('../../static/img/digital-transform/mask-white.png');
+    width: 590px;
+    height: 70px;
+    position: absolute;
+    left: 0;
+    top: -6px;
+    @media (max-width: 415px) {
+      display: none;
+    }
+  }
+  &_border-left {
+    height: 447px;
+    top: 243px;
+  }
+  &_border-right {
+    height: 620px;
+    right: -2px;
+    top: -100px;
+  }
+}
+
+.image-mts {
+  margin-bottom: 10px;
+}
+
+
+

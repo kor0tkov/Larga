@@ -1,21 +1,10 @@
 .news {
+  width: 1100px;
   position: relative;
   margin-bottom: 150px;
 }
 .news_head {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-}
-@media (max-width: 415px) {
-  .news_head {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-bottom: 10px;
-    margin-bottom: 4px;
-  }
 }
 .news_head_title {
   width: 550px;
@@ -26,11 +15,6 @@
   position: relative;
   top: -5px;
   left: -3px;
-}
-@media (max-width: 415px) {
-  .news_head_title {
-    font-size: 48px;
-  }
 }
 .news_head_subtitle-wrapper {
   width: 550px;
@@ -43,13 +27,6 @@
   letter-spacing: 5px;
   padding: 0 0 0 50px;
 }
-@media (max-width: 415px) {
-  .news_head_subtitle {
-    font-size: 28px;
-    letter-spacing: 3px;
-    padding: 0 0 0 35px;
-  }
-}
 .news_head_subtitle::before {
   content: '';
   width: 36px;
@@ -59,40 +36,17 @@
   top: 22px;
   left: 0;
 }
-@media (max-width: 415px) {
-  .news_head_subtitle::before {
-    width: 20px;
-    height: 3px;
-  }
-}
 .news_main {
   background-color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  border: 1px solid;
-}
-@media (max-width: 415px) {
-  .news_main {
-    border-color: rgba(180, 194, 198, 0.644);
-  }
+  flex-wrap: wrap;
 }
 .news_main_item {
-  width: 407px;
+  width: 408px;
   height: 315px;
   border: 1px solid;
   border-color: rgba(180, 194, 198, 0.644);
   padding: 35px 100px 0 40px;
-}
-@media (max-width: 415px) {
-  .news_main_item {
-    height: auto;
-    border-bottom: none;
-    border-top: none;
-    padding-right: 91px;
-  }
 }
 .news_main_item_date {
   color: #A3D4F2;
@@ -108,23 +62,15 @@
   padding: 0 0 30px 0;
 }
 .news_mask-top {
-  background-image: url("../../static/img/digital-transform/mask.png");
+  background-image: url('../../static/img/digital-transform/mask.png');
   height: 50px;
   width: 360px;
   position: absolute;
   right: -95px;
   top: 13px;
 }
-@media (max-width: 415px) {
-  .news_mask-top {
-    width: 162px;
-    height: 196px;
-    right: -56px;
-    top: -148px;
-  }
-}
 .news_mask-bottom {
-  background-image: url("../../static/img/digital-transform/mask.png");
+  background-image: url('../../static/img/digital-transform/mask.png');
   height: 204px;
   width: 326px;
   position: absolute;

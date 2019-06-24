@@ -1,32 +1,16 @@
 .iot {
+  width: 1280px;
   height: 557px;
   margin: 0 0 75px 0;
   position: relative;
   left: -95px;
-}
-@media (max-width: 415px) {
-  .iot {
-    height: auto;
-    left: -35px;
-  }
 }
 .iot_darkblue-block {
   width: 845px;
   height: 557px;
   background-color: #012950;
   position: absolute;
-  left: 0;
-}
-@media (max-width: 415px) {
-  .iot_darkblue-block {
-    width: 380px;
-    height: auto;
-    position: relative;
-    left: 0;
-    padding: 0 30px 0 35px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
+  left: 0 ;
 }
 .iot_darkblue-block_image {
   position: absolute;
@@ -34,22 +18,8 @@
   top: 60px;
   left: 645px;
 }
-@media (max-width: 415px) {
-  .iot_darkblue-block_image {
-    width: 343px;
-    top: 0;
-    left: 0;
-    position: relative;
-    padding: 0 0 20px 0;
-  }
-}
 .iot_darkblue-block_content {
   padding: 60px 255px 60px 95px;
-}
-@media (max-width: 415px) {
-  .iot_darkblue-block_content {
-    padding: 0;
-  }
 }
 .iot_darkblue-block_content_title {
   font-size: 32px;
@@ -70,23 +40,13 @@
   color: white;
   padding: 0 0 40px 0;
 }
-@media (max-width: 415px) {
-  .iot_darkblue-block_content_text {
-    padding: 0;
-  }
-}
 .iot_darkblue-block_mask {
-  background-image: url("../../static/img/digital-transform/mask.png");
+  background-image: url('../../static/img/digital-transform/mask.png');
   width: 333px;
   height: 286px;
   position: absolute;
   right: -50%;
   bottom: 30px;
-}
-@media (max-width: 415px) {
-  .iot_darkblue-block_mask {
-    display: none;
-  }
 }
 .iot_border-left {
   height: 720px;

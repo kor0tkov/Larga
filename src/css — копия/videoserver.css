@@ -1,0 +1,63 @@
+.videoserver {
+  width: 1280px;
+  height: 500px;
+  position: relative;
+  left: -95px;
+  margin: 0 0 65px 0;
+}
+.videoserver_white-block {
+  width: 845px;
+  height: 500px;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+}
+.vidoserver_blue-block {
+  width: 1280px;
+  height: 135px;
+  position: absolute;
+  background-color: #A3D4F2;
+  z-index: 1;
+  top: 35px;
+}
+.vidoserver_blue-block_title {
+  font-size: 32px;
+  color: #012950;
+  padding: 25px 0 10px 54%;
+}
+.vidoserver_blue-block_subtitle {
+  font-size: 18px;
+  color: #012950;
+  padding: 0 0 25px 54%;
+  width: 450px;
+}
+.videoserver_white-block_text {
+  padding: 185px 100px 100px 256px;
+}
+.videoserver_white-block_image {
+  position: absolute;
+  z-index: 2;
+  left: -340px;
+  top: 35px;
+}
+.videoserver_white-block_button {
+  left: 255px;
+  bottom: 30px;
+}
+.videoserver_mask {
+  background-image: url('../../static/img/digital-transform/mask.png');
+  width: 203px;
+  height: 286px;
+  position: absolute;
+  bottom: 0;
+}
+.videoserver_border-middle {
+  height: 530px;
+  left: 210px;
+  top: 50px;
+}
+.videoserver_border-right {
+  height: 565px;
+  top: -65px;
+  right: 84px;
+}
