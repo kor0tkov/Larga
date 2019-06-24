@@ -18,7 +18,7 @@
   z-index: 1;
 }
 
-.menu {
+.menu-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,27 +27,27 @@
           justify-content: space-between;
   width: 72%;
 }
-.menu-item {
+.menu-list-item {
   text-transform: uppercase;
   padding: 0 0 0 50px;
   font-size: 16px;
   letter-spacing: 2px;
 }
 @media screen and (max-width: 415px) {
-  .menu-item {
+  .menu-list-item {
     padding: 0 0 60px 0;
     width: 70%;
   }
 }
-.menu-item:first-child {
+.menu-list-item:first-child {
   padding-left: 0;
 }
-.menu-item_link {
+.menu-list-item_link {
   text-decoration: none;
   color: black;
 }
 @media screen and (max-width: 415px) {
-  .menu-item_link {
+  .menu-list-item_link {
     font-size: 27px;
   }
 }
@@ -66,16 +66,11 @@
     padding: 25px 35px;
   }
 
-  .logo {
-    z-index: 6;
-    background-image: url(../../static/img/feedback/logo-inverse.png);
+  .logo_inverse {
+    margin-bottom: 50px;
   }
 
-  .menu {
-    position: fixed;
-    z-index: 5;
-    width: 100%;
-    height: 100%;
+  .menu-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -86,11 +81,18 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+
+  .menu {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
     background-color: #012950;
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    -webkit-transform: translateX(200%);
-            transform: translateX(200%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
     color: #fff;
   }
   .menu-item {
@@ -99,7 +101,7 @@
 }
 @media screen and (max-width: 415px) and (max-width: 415px) {
   .menu-item {
-    padding-bottom: 60px;
+    margin-bottom: 60px;
     line-height: 35px;
   }
 }
@@ -108,7 +110,6 @@
     color: #fff;
     font-size: 30px;
     text-transform: uppercase;
-    border-bottom: 1px solid #B4C2C6;
   }
 }
 @media screen and (max-width: 415px) and (max-width: 415px) {
@@ -127,8 +128,8 @@
     outline: none !important;
     background-color: #012950 !important;
     left: 0;
-    bottom: 0;
-    padding: 0 80px 100px 35px;
+    top: 0;
+    padding: 35px 80px 10% 35px;
   }
 
   .menu-btn {
@@ -199,12 +200,14 @@
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
     top: 0px;
+    background-color: #fff;
   }
 
   .menu_active span:after {
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
     bottom: 0px;
+    background-color: #fff;
   }
 
   .menu_active span::before,

@@ -12,7 +12,7 @@
   }
 }
 
-.menu {
+.menu-list {
   display: flex;
   justify-content: space-between;
   width: 72%;
@@ -46,6 +46,9 @@
 .menu-btn {
   display: none;
 }
+.logo_inverse {
+
+}
 
 @media screen and (max-width: 415px) {
 
@@ -54,8 +57,16 @@
 }  
 
 .logo {
-  z-index: 6;
-  background-image: url(../../static/img/feedback/logo-inverse.png);
+  
+}
+.logo_inverse {
+  margin-bottom: 50px;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .menu {
@@ -63,24 +74,20 @@
   z-index: 5;
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   background-color: #012950;
   transition: 0.5s;
-  transform: translateX(200%);
+  transform: translateX(100%);
   color: #fff;
   &-item {
     color: #fff;
     @media screen and (max-width: 415px) {
-      padding-bottom: 60px;
+      margin-bottom: 60px;
       line-height: 35px;
     }
     &_link {
       color: #fff;
       font-size: 30px;
       text-transform: uppercase;
-      border-bottom: 1px solid #B4C2C6;
       @media screen and (max-width: 415px) {
         font-size: 27px;
       }
@@ -96,8 +103,8 @@
   outline: none !important;
   background-color: #012950 !important;
   left: 0;
-  bottom: 0;
-  padding: 0 80px 100px 35px;
+  top: 0;
+  padding: 35px 80px 10% 35px;
 }
 
 .menu-btn {
@@ -160,11 +167,13 @@
 .menu_active span:before {
   transform: rotate(-45deg);
   top: 0px;
+  background-color: #fff;
 }
 
 .menu_active span:after {
   transform: rotate(45deg);
   bottom: 0px;
+  background-color: #fff;
 }
 
 .menu_active span::before,
