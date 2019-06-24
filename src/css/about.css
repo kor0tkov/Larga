@@ -1,10 +1,14 @@
 .about {
-  width: 1100px;
   height: 470px;
   position: relative;
   background-color: #fff;
   margin: 0 0 80px 0;
   z-index: 1;
+}
+@media (max-width: 415px) {
+  .about {
+    min-height: 800px;
+  }
 }
 .about_blue-block {
   width: 510px;
@@ -13,11 +17,37 @@
   position: absolute;
   top: 50px;
 }
+@media (max-width: 415px) {
+  .about_blue-block {
+    width: 313px;
+    height: 90px;
+  }
+}
+.about_blue-block_border-left {
+  height: 190px;
+}
+.about_blue-block_border {
+  height: 425px;
+  left: 510px;
+  top: 50px;
+}
+@media screen and (max-width: 415px) {
+  .about_blue-block_border {
+    display: none;
+  }
+}
 .about_title {
   font-size: 46px;
   padding: 20px 0 20px 50px;
   letter-spacing: 5px;
   color: #012950;
+}
+@media (max-width: 415px) {
+  .about_title {
+    font-size: 28px;
+    padding: 16px 0 10px 32px;
+    letter-spacing: 4px;
+  }
 }
 .about_title::before {
   content: '';
@@ -28,17 +58,12 @@
   top: 46px;
   left: 0;
 }
-.standart-text_wrapper {
-  width: 520px;
-  position: absolute;
-  left: 50%;
-  padding: 50px 0 0 4px;
-}
-.standart-text {
-  font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 24px;
-  font-weight: lighter;
+@media (max-width: 415px) {
+  .about_title::before {
+    width: 22px;
+    height: 3px;
+    top: 28px;
+  }
 }
 .about_copyright {
   position: absolute;
@@ -47,24 +72,47 @@
   color: #F7F7F7;
   text-transform: uppercase;
 }
-.about_blue-block_border-left {
-  height: 190px;
-}
-.about_blue-block_border {
-  height: 425px;
-  left: 510px;
-  top: 50px;
+@media (max-width: 415px) {
+  .about_copyright {
+    display: none;
+  }
 }
 .about_text_border-left {
   height: 382px;
-  left: 552px
+  left: 552px;
 }
 .about_mask-left {
-  background-image: url('../../static/img/digital-transform/mask.png');
+  background-image: url("../../static/img/digital-transform/mask.png");
   width: 220px;
   height: 245px;
   position: absolute;
   left: -8%;
   top: 23%;
   z-index: -1;
+}
+@media (max-width: 415px) {
+  .about_mask-left {
+    width: 219px;
+    height: 162px;
+    top: auto;
+    bottom: -80px;
+    left: -110px;
+  }
+}
+
+.standart-text_wrapper {
+  width: 520px;
+  position: absolute;
+  left: 50%;
+  padding: 50px 0 0 4px;
+}
+@media (max-width: 415px) {
+  .standart-text_wrapper {
+    width: 100%;
+    position: static;
+    padding: 155px 28px 0 28px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    min-width: 285px;
+  }
 }

@@ -1,34 +1,36 @@
 @font-face {
   font-family: "akrobat-regular";
-  src: url("../../static/fonts/Akrobat-Regular.ttf") format("truetype");
+  src: url('../../static/fonts/Akrobat-Regular.ttf') format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "akrobat-extrabold";
-  src: url("../../static/fonts/Akrobat-ExtraBold.ttf") format("truetype");
+  src: url('../../static/fonts/Akrobat-ExtraBold.ttf') format("truetype");
   font-weight: bold;
   font-style: normal;
 }
+
 @font-face {
   font-family: "akrobat-light";
-  src: url("../../static/fonts/Akrobat-Light.ttf") format("truetype");
+  src: url('../../static/fonts/Akrobat-Light.ttf') format("truetype");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "akrobat-semibold";
-  src: url("../../static/fonts/Akrobat-SemiBold.ttf") format("truetype");
+  src: url('../../static/fonts/Akrobat-SemiBold.ttf') format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 html {
   overflow-x: hidden;
 }
-
 body {
   font-family: "akrobat-regular";
-  background-color: whitesmoke;
+  background-color: rgb(245, 245, 245);
 }
 
 h22 {
@@ -54,6 +56,7 @@ ul, li, p, h2, h3, span {
 }
 
 @media screen and (max-width: 415px) {
+
   .main, .header, .footer {
     width: 100%;
     max-width: 345px;
@@ -62,6 +65,7 @@ ul, li, p, h2, h3, span {
     margin-right: auto;
   }
 }
+
 .border {
   width: 1px;
   position: absolute;

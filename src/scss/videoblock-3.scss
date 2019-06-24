@@ -1,0 +1,23 @@
+.videoblock-3 {
+  height: 730px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 65px 0;
+  @media (max-width: 415px) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+  }
+  &_mask {
+    width: 348px;
+    height: 147px;
+    background-image: url('../../static/img/digital-transform/mask.png');
+    position: absolute;
+    right: -65px;
+    bottom: 45px;
+    @media (max-width: 415px) {
+      display: none;
+    }
+  }
+}

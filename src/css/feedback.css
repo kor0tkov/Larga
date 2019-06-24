@@ -1,12 +1,22 @@
 .feedback {
-  width: 1100px;
   height: 908px;
   padding: 0 95px;
   position: relative;
   background-color: #012950;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media (max-width: 415px) {
+  .feedback {
+    padding: 0 35px;
+    height: auto;
+  }
 }
 .feedback_info {
   width: 480px;
@@ -17,15 +27,33 @@
   width: 1100px;
   padding: 0 0 50px 0;
 }
+@media (max-width: 415px) {
+  .feedback_info_title {
+    font-size: 28px;
+    width: auto;
+  }
+}
 .feedback_info_contacts {
   color: #fff;
   padding: 15px 0 40px 40px;
   border-left: 2px solid #6E95BA;
 }
+@media (max-width: 415px) {
+  .feedback_info_contacts {
+    width: 225px;
+    padding: 15px 25px;
+    margin-bottom: 65px;
+  }
+}
 .feedback_form {
-  width: 551px;
+  width: 524px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 0 0 140px 0;
 }
 .feedback_form_input {
@@ -39,6 +67,21 @@
   font-size: 18px;
   color: #fff;
   padding: 0 0 0 20px;
+}
+@media (max-width: 415px) {
+  .feedback_form_input {
+    width: 324px;
+    height: 48px;
+  }
+}
+.feedback_form_input::-webkit-input-placeholder {
+  color: #fff;
+}
+.feedback_form_input:-ms-input-placeholder {
+  color: #fff;
+}
+.feedback_form_input::-ms-input-placeholder {
+  color: #fff;
 }
 .feedback_form_input::placeholder {
   color: #fff;
@@ -58,15 +101,38 @@
 }
 .feedback_footer {
   width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+@media (max-width: 415px) {
+  .feedback_footer {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 .feedback_footer_text {
   color: #fff;
 }
+@media (max-width: 415px) {
+  .feedback_footer_text {
+    padding-left: 45px;
+  }
+}
 .feedback_border-right {
   height: 680px;
-  right: 95px;
+  right: 68px;
   top: -150px;
+}
+@media (max-width: 415px) {
+  .feedback_border-right {
+    display: none;
+  }
 }

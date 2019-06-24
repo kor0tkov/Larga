@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="src/css/normalize.css">
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="stylesheet" href="src/css/header.css">
-    <link rel="stylesheet" href="src/css/digital-transform.css">
+    <link rel="stylesheet" href="src/css/digital.css">
     <link rel="stylesheet" href="src/css/about.css">
     <link rel="stylesheet" href="src/css/videoblock-1.css">
     <link rel="stylesheet" href="src/css/videoserver.css">
@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="src/css/partners.css">
     <link rel="stylesheet" href="src/css/news.css">
     <link rel="stylesheet" href="src/css/feedback.css">
+    <link rel="stylesheet" href="src/css/media.css">
   </head>
   <body>
     <header class="header">
@@ -42,49 +43,51 @@
             <a class="menu-item_link" href="#">Контакты</a>
           </li>
         </ul>
+        <button class="menu-btn" id="menu-btn">
+          <span class="menu-btn-inner"></span>
+        </a>
       </nav>
     </header>
     <main class="main">
-      <div class="digital-transform">
-        <div class="digital-transform_head">
-          <h2 class="digital-transform_title">Цифровая трансформация</h2>
-          <h3 class="digital-transform_subtitle">Высокие технологии и инжиниринг</h3>
+      <section class="digital">
+        <div class="digital_info">
+          <h2 class="digital_info-title">Цифровая трансформация</h2>
+          <h3 class="digital_info-subtitle">Высокие технологии и инжиниринг</h3>
         </div>
-        <div class="digital-transform_image-wrapper">
-          <img class="digital-transform_image" src="static/img/digital-transform/photo_2019-02-25_11-55-56.png">
-          <a class="digital-transform_image-wrapper_link" href="#">
-            оборудование
-            <span class="digital-transform_image-wrapper_arrow"></span>
-          </a>
+        <div class="digital_aside">
+          <div class="digital_aside-blue">
+            <img class="digital_aside-image" src="static/img/digital-transform/360-degrees.png">
+          </div>
+          <div class="digital_aside-gray"></div>
         </div>
-        <span class="border-gray digital-transform_blue-block_border-left"></span>
-        <div class="digital-transform_blue-block">
-          <img class="digital-transform_blue-block_image" src="static/img/digital-transform/360-degrees.png">
-        </div>
-        <span class="border-gray digital-transform_gray-block_border"></span>
-        <div class="digital-transform_gray-block"></div>
-        <div class="digital-transform_darkblue-block">
-          <ul class="digital-transform_list">
-            <li class="digital-transform_item">Larga.Videoserver  (Ipeyey Core)</li>
-            <li class="digital-transform_item">Микросенсорика и IoT</li>
-            <li class="digital-transform_item">Интеллектуальный интегратор</li>
-            <li class="digital-transform_item">Цифровое производство</li>
-            <li class="digital-transform_item">1С комплексные отраслевые решения</li>
+        <footer class="digital_footer">
+          <ul class="digital_footer-list">
+            <li class="digital_footer-item">Larga.Videoserver  (Ipeyey Core)</li>
+            <li class="digital_footer-item">Микросенсорика и IoT</li>
+            <li class="digital_footer-item">Интеллектуальный интегратор</li>
+            <li class="digital_footer-item">Цифровое производство</li>
+            <li class="digital_footer-item">1С комплексные отраслевые решения</li>
+            <li class="digital_footer-item">
+                Проектирование и продажа 
+                оборудования и решений, на основе
+                инновационных электромагнитных 
+                систем нового поколения</li>
+            <li class="digital_footer-item">Информационная безопасность</li>
+            <li class="digital_footer-item">Business Intellegence</li>
           </ul>
-          <ul class="digital-transform_list">
-            <li class="digital-transform_item">
-              Проектирование и продажа 
-              оборудования и решений, на основе
-              инновационных электромагнитных 
-              систем нового поколения</li>
-            <li class="digital-transform_item">Информационная безопасность</li>
-            <li class="digital-transform_item">Business Intellegence</li>
-          </ul>
-        </div>
-        <span class="border-gray digital-transform_blue-block_border-right"></span>
-        <div class="digital-transform_mask-left"></div>
-        <div class="digital-transform_mask-right"></div>
-      </div>
+          <div class="digital_footer-aside">
+            <img 
+              class="digital_footer-image" 
+              src="static/img/digital-transform/photo_2019-02-25_11-55-56@1x.png" 
+              srcset="static/img/digital-transform/photo_2019-02-25_11-55-56@1x.png 1x, static/img/digital-transform/photo_2019-02-25_11-55-56@2x.png 2x"
+            />
+            <a class="digital_footer-link" href="#">
+              оборудование
+              <span class="digital_footer-arrow"></span>
+            </a>
+          </div>
+        </footer>
+      </section>
       <div class="about">
         <span class="border-gray about_blue-block_border-left"></span>
         <div class="about_blue-block">
@@ -94,7 +97,6 @@
           </h2>
         </div>
         <span class="border-gray about_blue-block_border"></span>
-        <span class="border-gray about_text_border-left"></span>
         <div class="standart-text_wrapper">
           <p class="standart-text">
             Основанная в 1998 году IT-компания «ЛАРГА» в 2008 году была
@@ -155,9 +157,9 @@
       </div>
       <!--videoserver-->
       <div class="videoserver">
-        <div class="vidoserver_blue-block">
-          <h2 class="vidoserver_blue-block_title">Larga.Videoserver (Ipeyey Core)</h2>
-          <h3 class="vidoserver_blue-block_subtitle">
+        <div class="videoserver_blue-block">
+          <h2 class="videoserver_blue-block_title">Larga.Videoserver (Ipeyey Core)</h2>
+          <h3 class="videoserver_blue-block_subtitle">
               Облачное платформенное решение по предоставлению сервисов
               видеонаблюдения и видеоаналитики
           </h3>
@@ -346,8 +348,8 @@
           <div class="advantage_list_item">
             <span class="advantage_list_item_number">01.</span>
             <div class="advantage_list_item_text-wrapper">
-              <h3 class="advantage_list_item_title">Уникальные решениея</h3>
-              <p class="standart-text">
+              <h3 class="advantage_list_item_title">Уникальные решения</h3>
+              <p class="standart-text advantage_text">
                 ГК LARGA разрабатывает перспективные
                 платформенные решения со сложной
                 семантической логикой. Решения
@@ -361,7 +363,7 @@
             <span class="advantage_list_item_number">02.</span>
             <div class="advantage_list_item_text-wrapper">
               <h3 class="advantage_list_item_title">Полный спектр услуг</h3>
-              <p class="standart-text">
+              <p class="standart-text advantage_text">
                 Мы предлагаем полный спектр услуг в
                 области ИТ-консалтинга, системной
                 интеграции, внедрения систем
@@ -376,7 +378,7 @@
             <span class="advantage_list_item_number">03.</span>
             <div class="advantage_list_item_text-wrapper">
               <h3 class="advantage_list_item_title">Потрясающие партнеры</h3>
-              <p class="standart-text">
+              <p class="standart-text advantage_text">
                 Группа компаний LARGA располагает
                 широкой партнерской сетью, которая
                 позволяет компании закрыть любую
@@ -390,7 +392,7 @@
             <span class="advantage_list_item_number">04.</span>
             <div class="advantage_list_item_text-wrapper">
               <h3 class="advantage_list_item_title">Богатый опыт</h3>
-              <p class="standart-text">
+              <p class="standart-text advantage_text">
                 Компания LARGA была основана в 1998
                 году и за несколько лет вошла в число
                 крупнейших ИТ-компаний Санкт-
@@ -532,5 +534,8 @@
     </footer>
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
+    <!--scripts-->
+    <script src="plugins/jquery-3.3.1.min.js"></script>
+    <script src="src/js/menu.js"></script>
   </body>
 </html>
