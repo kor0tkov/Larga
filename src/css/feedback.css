@@ -16,6 +16,7 @@
   .feedback {
     padding: 0 35px;
     height: auto;
+    width: 345px;
   }
 }
 .feedback_info {

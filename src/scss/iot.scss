@@ -78,11 +78,17 @@
     height: 720px;
     left: 95px;
     top: -65px;
+    @media (max-width: 415px) {
+      display: none;
+    }
   }
   &_border-middle {
     height: 580px;
     top: 60px;
     right: 199px;
+    @media (max-width: 415px) {
+      display: none;
+    }
   }
 }
 

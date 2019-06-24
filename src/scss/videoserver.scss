@@ -47,7 +47,7 @@
       left: 255px;
       bottom: 30px;
       @media (max-width: 415px) {
-        left: 0;
+        left: 30px;
         bottom: 0;
         top: 200px;
         position: relative;
@@ -101,11 +101,17 @@
     height: 530px;
     left: 210px;
     top: 50px;
+    @media (max-width: 415px) {
+      display: none;
+    }
   }
   &_border-right {
     height: 565px;
     top: -65px;
     right: 84px;
+    @media (max-width: 415px) {
+      display: none;
+    }
   }
 }
 

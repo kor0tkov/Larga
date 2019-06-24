@@ -93,8 +93,18 @@
   left: 95px;
   top: -65px;
 }
+@media (max-width: 415px) {
+  .iot_border-left {
+    display: none;
+  }
+}
 .iot_border-middle {
   height: 580px;
   top: 60px;
   right: 199px;
+}
+@media (max-width: 415px) {
+  .iot_border-middle {
+    display: none;
+  }
 }
