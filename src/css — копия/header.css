@@ -1,0 +1,40 @@
+.header {
+  padding: 50px 95px;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 72%;
+}
+.menu-item {
+  text-transform: uppercase;
+  padding: 0 0 0 50px;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+.menu-item:first-child {
+  padding: 0;
+}
+.menu-item_link {
+  text-decoration: none;
+  color: black;
+}
+.logo {
+  width: 115px;
+  height: 37px;
+}
+.border-gray {
+  width: 1px;
+  background-color: rgba(180, 194, 198, 0.644);
+  position: absolute;
+}
+.navigation_border {
+  height: 1556px;
+  z-index: 1;
+}
+

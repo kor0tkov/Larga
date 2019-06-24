@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "akrobat-regular";
+  src: url('../../static/fonts/Akrobat-Regular.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "akrobat-extrabold";
+  src: url('../../static/fonts/Akrobat-ExtraBold.ttf') format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "akrobat-light";
+  src: url('../../static/fonts/Akrobat-Light.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "akrobat-semibold";
+  src: url('../../static/fonts/Akrobat-SemiBold.ttf') format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  font-family: "akrobat-regular";
+  background-color: rgb(245, 245, 245);
+}
+
+h22 {
+  font-family: "akrobat-bold", sans-serif;
+}
+
+li {
+  list-style-type: none;
+  font-family: "akrobat-semibold";
+}
+
+ul, li, p, h2, h3, span {
+  margin: 0;
+  padding: 0;
+}
+
+.main, .header, .footer {
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 95px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.border {
+  width: 1px;
+  position: absolute;
+  background-color: rgba(180, 194, 198, 0.644);
+}

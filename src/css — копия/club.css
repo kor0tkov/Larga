@@ -1,0 +1,64 @@
+.club-wrapper {
+  position: relative;
+  margin: 0 0 75px;
+}
+.club {
+  width: 1184px;
+  height: 735px;
+  background-color: #EAEAEA;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: baseline;
+}
+.club_title {
+  font-size: 87px;
+  color: #F7F7F7;
+  text-transform: uppercase;
+  width: 100%;
+  height: 120px;
+  margin: -15px 0 15px -5px;
+  letter-spacing: 10px;
+}
+.club_blue-block_subtitle {
+  font-size: 46px;
+  color: #012950;
+  padding: 30px 30px 0 60px;
+  letter-spacing: 5px;
+}
+.club_blue-block_subtitle::before {
+  content: '';
+  width: 36px;
+  height: 5px;
+  background-color: #012950;
+  position: absolute;
+  top: 170px;
+  left: 0;
+}
+.club_blue-block {
+  width: 550px;
+  height: 340px;
+  background-color: #A3D4F2;
+}
+.club_text-wrapper {
+  width: 480px;
+  margin-right: 90px;
+}
+.club_mask {
+  background-image: url('../../static/img/digital-transform/mask.png');
+  width: 287px;
+  height: 200px;
+  position: absolute;
+  left: -95px;
+  bottom: 5px;
+}
+.club_border-left {
+  height: 800px;
+  top: -65px;
+}
+.club_border-middle {
+  height: 1562px;
+  top: 120px;
+  right: 550px;
+  z-index: 1;
+}
