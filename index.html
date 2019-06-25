@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="src/css/media.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="top">
       <nav class="navigation">
         <span class="border-gray navigation_border"></span>
         <img class="logo" src="static/img/header/logo.png">
@@ -30,19 +30,19 @@
             <img class="logo_inverse" src="static/img/feedback/logo-inverse.png">
             <ul class="menu-list">
                 <li class="menu-item">
-                  <a class="menu-item_link" href="#">О компании</a>
+                  <a class="menu-item_link" href="#about">О компании</a>
                 </li>
                 <li class="menu-item">
                   <a class="menu-item_link" href="#">Направления деятельности</a>
                 </li>
                 <li class="menu-item">
-                  <a class="menu-item_link" href="#">Партнеры</a>
+                  <a class="menu-item_link" href="#partners">Партнеры</a>
                 </li>
                 <li class="menu-item">
-                  <a class="menu-item_link" href="#">Новости</a>
+                  <a class="menu-item_link" href="#news">Новости</a>
                 </li>
                 <li class="menu-item">
-                  <a class="menu-item_link" href="#">Контакты</a>
+                  <a class="menu-item_link" href="#contacts">Контакты</a>
                 </li>
               </ul>
         </div>
@@ -91,7 +91,7 @@
           </div>
         </footer>
       </section>
-      <div class="about">
+      <div class="about" id="about">
         <span class="border-gray about_blue-block_border-left"></span>
         <div class="about_blue-block">
           <h2 class="about_title">
@@ -410,7 +410,7 @@
         </div>
       </div>
       <!--Партнеры-->
-      <div class="partners">
+      <div class="partners" id="partners">
         <h2 class="partners_title">Партнеры</h2>
         <span class="border-gray partners_border-right"></span>
         <div class="partners_content-mts">
@@ -528,6 +528,7 @@
           <input type="text" class="feedback_form_input standart-text" placeholder="Сообщение">
           <span class="border feedback_border-right"></span>
           <button class="feedback_form_button" type="submit" value="Отправить">Отправить</button>
+          <a class="feedback_form-link" href="#top"></a>
         </div>
         <div class="feedback_footer">
           <img src="static/img/feedback/logo-inverse.png">

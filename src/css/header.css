@@ -53,8 +53,9 @@
 }
 
 .logo {
-  width: 115px;
-  height: 37px;
+  height: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .menu-btn {
@@ -67,7 +68,11 @@
   }
 
   .logo_inverse {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-top: 4px;
   }
 
   .menu-list {
@@ -94,15 +99,32 @@
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
     color: #fff;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 35px 80px 10% 35px;
+    outline: none;
   }
+}
+@media screen and (max-width: 415px) and (max-width: 415px) {
+  .menu {
+    padding: 25px 35px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+@media screen and (max-width: 415px) {
   .menu-item {
     color: #fff;
   }
 }
 @media screen and (max-width: 415px) and (max-width: 415px) {
   .menu-item {
-    margin-bottom: 60px;
+    margin-bottom: 55px;
     line-height: 35px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #B4C2C6;
   }
 }
 @media screen and (max-width: 415px) {
@@ -115,6 +137,7 @@
 @media screen and (max-width: 415px) and (max-width: 415px) {
   .menu-item_link {
     font-size: 27px;
+    text-decoration: none;
   }
 }
 @media screen and (max-width: 415px) {
@@ -125,22 +148,17 @@
   .menu_active {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
-    outline: none !important;
     background-color: #012950 !important;
-    left: 0;
-    top: 0;
-    padding: 35px 80px 10% 35px;
   }
 
   .menu-btn {
     display: block;
     position: relative;
     z-index: 6;
-    overflow: hidden;
     margin: 0;
     padding: 0;
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     font-size: 0;
     text-indent: -9999px;
     -webkit-appearance: none;
@@ -153,16 +171,16 @@
     cursor: pointer;
     -webkit-transition: background 0.3s;
     transition: background 0.3s;
-    background-color: whitesmoke;
+    background-color: transparent;
     outline: none !important;
   }
 
   .menu-btn-inner {
     display: block;
     position: absolute;
-    top: 25px;
-    left: 5px;
-    right: 5px;
+    top: 10px;
+    left: 0;
+    right: 0;
     height: 4px;
     background: black;
     -webkit-transition: background 0 0.3s;
@@ -185,11 +203,11 @@
   }
 
   .menu-btn-inner::before {
-    top: -19px;
+    top: -10px;
   }
 
   .menu-btn-inner::after {
-    bottom: -19px;
+    bottom: -10px;
   }
 
   .menu_active span {

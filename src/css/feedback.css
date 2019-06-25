@@ -14,7 +14,7 @@
 }
 @media (max-width: 415px) {
   .feedback {
-    padding: 0 35px;
+    padding: 0 35px 40px;
     height: auto;
     width: 345px;
   }
@@ -56,6 +56,12 @@
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 0 140px 0;
+}
+@media (max-width: 415px) {
+  .feedback_form {
+    position: relative;
+    padding-bottom: 220px;
+  }
 }
 .feedback_form_input {
   outline: none;
@@ -99,6 +105,23 @@
   font-size: 27px;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+.feedback_form-link {
+  display: block;
+  position: absolute;
+  bottom: 52px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-top: 4px solid #fff;
+  border-right: 4px solid #fff;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+@media (min-width: 415px) {
+  .feedback_form-link {
+    display: none;
+  }
 }
 .feedback_footer {
   width: 1100px;

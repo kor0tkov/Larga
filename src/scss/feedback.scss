@@ -6,27 +6,33 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  @media (max-width: 415px)  {
-    padding: 0 35px;
+
+  @media (max-width: 415px) {
+    padding: 0 35px 40px;
     height: auto;
     width: 345px;
   }
+
   &_info {
     width: 480px;
+
     &_title {
       font-size: 32px;
       color: #fff;
       width: 1100px;
       padding: 0 0 50px 0;
-      @media (max-width: 415px)  {
+
+      @media (max-width: 415px) {
         font-size: 28px;
         width: auto;
       }
     }
+
     &_contacts {
       color: #fff;
       padding: 15px 0 40px 40px;
       border-left: 2px solid #6E95BA;
+
       @media (max-width: 415px) {
         width: 225px;
         padding: 15px 25px;
@@ -34,11 +40,18 @@
       }
     }
   }
+
   &_form {
     width: 524px;
     display: flex;
     flex-direction: column;
     padding: 0 0 140px 0;
+
+    @media (max-width: 415px) {
+      position: relative;
+      padding-bottom: 220px;
+    }
+
     &_input {
       outline: none;
       -webkit-appearance: none;
@@ -50,18 +63,22 @@
       font-size: 18px;
       color: #fff;
       padding: 0 0 0 20px;
+
       @media (max-width: 415px) {
         width: 324px;
         height: 48px;
       }
+
       &::placeholder {
         color: #fff;
       }
+
       &:nth-child(4) {
         padding-bottom: 73px;
         margin-bottom: 50px;
       }
     }
+
     &_button {
       width: 178px;
       height: 56px;
@@ -71,38 +88,50 @@
       text-transform: uppercase;
       letter-spacing: 2px;
     }
+
+    &-link {
+      display: block;
+      position: absolute;
+      bottom: 52px;
+      right: 10px;
+      width: 30px;
+      height: 30px;
+      border-top: 4px solid #fff;
+      border-right: 4px solid #fff;
+      transform: rotate(-45deg);
+
+      @media (min-width: 415px) {
+        display: none;
+      }
+    }
   }
+
   &_footer {
     width: 1100px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    @media (max-width: 415px)  {
+
+    @media (max-width: 415px) {
       align-items: center;
     }
+
     &_text {
       color: #fff;
-      @media (max-width: 415px)  {
+
+      @media (max-width: 415px) {
         padding-left: 45px;
       }
     }
   }
+
   &_border-right {
     height: 680px;
     right: 68px;
     top: -150px;
-    @media (max-width: 415px)  {
+
+    @media (max-width: 415px) {
       display: none;
     }
   }
 }
-
-
-
-
-
-
-
-
-
-

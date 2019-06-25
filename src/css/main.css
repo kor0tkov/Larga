@@ -25,10 +25,18 @@
 html {
   overflow-x: hidden;
 }
+html.hidden-overflow {
+  overflow: hidden;
+}
 
 body {
   font-family: "akrobat-regular";
   background-color: whitesmoke;
+}
+@media screen and (max-width: 415px) {
+  body {
+    overflow-x: hidden;
+  }
 }
 
 h22 {
