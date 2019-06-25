@@ -48,12 +48,19 @@ li {
   font-family: "akrobat-semibold";
 }
 
-ul, li, p, h2, h3, span {
+ul,
+li,
+p,
+h2,
+h3,
+span {
   margin: 0;
   padding: 0;
 }
 
-.main, .header, .footer {
+.main,
+.header,
+.footer {
   width: 100%;
   max-width: 1100px;
   padding: 0 95px;
@@ -62,7 +69,9 @@ ul, li, p, h2, h3, span {
 }
 
 @media screen and (max-width: 415px) {
-  .main, .header, .footer {
+  .main,
+  .header,
+  .footer {
     width: 100%;
     max-width: 345px;
     padding: 0 35px;

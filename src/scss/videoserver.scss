@@ -1,41 +1,47 @@
-
 .videoserver {
   width: 1280px;
   height: 500px;
   position: relative;
   left: -95px;
   margin: 0 0 65px 0;
-  @media (max-width: 415px)  {
+
+  @media (max-width: 415px) {
     left: auto;
     width: auto;
     height: auto;
   }
+
   &_white-block {
     width: 845px;
     height: 500px;
     background-color: #fff;
     position: absolute;
     right: 0;
-    @media (max-width: 415px)  {
+
+    @media (max-width: 415px) {
       position: relative;
       left: 0;
       width: auto;
       height: 800px;
     }
+
     &_text {
       padding: 185px 100px 100px 256px;
-      @media (max-width: 415px)  {
+
+      @media (max-width: 415px) {
         padding: 0 5px 0 30px;
         font-size: 15px;
         top: 200px;
         position: relative;
       }
     }
+
     &_image {
       position: absolute;
       z-index: 2;
       left: -340px;
       top: 35px;
+
       @media (max-width: 415px) {
         width: 343px;
         left: 0;
@@ -43,9 +49,11 @@
         position: relative;
       }
     }
+
     &_button {
       left: 255px;
       bottom: 30px;
+
       @media (max-width: 415px) {
         left: 30px;
         bottom: 0;
@@ -54,6 +62,7 @@
       }
     }
   }
+
   &_blue-block {
     width: 1280px;
     height: 135px;
@@ -61,65 +70,67 @@
     background-color: #A3D4F2;
     z-index: 1;
     top: 35px;
-    @media (max-width: 415px)  {
+
+    @media (max-width: 415px) {
       width: 415px;
       height: 218px;
       left: -35px;
     }
+
     &_title {
       font-size: 32px;
       color: #012950;
       padding: 25px 0 10px 54%;
-      @media (max-width: 415px)  {
+
+      @media (max-width: 415px) {
         padding: 25px 35px;
         font-size: 28px;
       }
     }
+
     &_subtitle {
       font-size: 18px;
       color: #012950;
       padding: 0 0 25px 54%;
       width: 450px;
-      @media (max-width: 415px)  {
+
+      @media (max-width: 415px) {
         padding: 0 35px;
         font-size: 18px;
         width: auto;
       }
     }
   }
+
   &_mask {
     background-image: url('../../static/img/digital-transform/mask.png');
     width: 203px;
     height: 286px;
     position: absolute;
     bottom: 0;
+
     @media (max-width: 415px) {
       display: none;
     }
   }
+
   &_border-middle {
     height: 530px;
     left: 210px;
     top: 50px;
+
     @media (max-width: 415px) {
       display: none;
     }
   }
+
   &_border-right {
     height: 565px;
     top: -65px;
     right: 84px;
+
     @media (max-width: 415px) {
       display: none;
     }
   }
 }
-
-
-
-
-
-
-
-
-
