@@ -118,13 +118,14 @@
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-@media (min-width: 415px) {
+@media (min-width: 416px) {
   .feedback_form-link {
     display: none;
   }
 }
 .feedback_footer {
-  width: 1100px;
+  max-width: 1100px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
