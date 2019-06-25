@@ -33,20 +33,22 @@
   }
 
   &_content-mts {
-    width: 480px;
-    padding: 25px 0 0 95px;
+    width: 40%;
+    padding: 135px 0 80px 95px;
 
     @media (max-width: 415px) {
       padding: 110px 35px 0 35px;
+      width: 100%;
     }
   }
 
   &_content-mircod {
-    width: 480px;
-    padding: 25px 0 0 75px;
+    width: 40%;
+    padding: 135px 0 80px 75px;
 
     @media (max-width: 415px) {
       padding: 110px 35px 0 35px;
+      width: 100%;
     }
   }
 
