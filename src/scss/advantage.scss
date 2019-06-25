@@ -43,9 +43,12 @@
     padding: 10px 0 0 0;
 
     &_item {
-      width: 549px;
-      height: 350px;
+      width: 50%;
       display: flex;
+      padding: 25px 0 60px 0;
+      @media (max-width: 415px) {
+        width: 100%;
+      }
 
       &_number {
         font-size: 126px;

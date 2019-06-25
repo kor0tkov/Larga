@@ -46,11 +46,16 @@
   padding: 10px 0 0 0;
 }
 .advantage_list_item {
-  width: 549px;
-  height: 350px;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 25px 0 60px 0;
+}
+@media (max-width: 415px) {
+  .advantage_list_item {
+    width: 100%;
+  }
 }
 .advantage_list_item_number {
   font-size: 126px;
