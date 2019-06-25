@@ -18,76 +18,14 @@
   z-index: 1;
 }
 
-.menu-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 72%;
-}
-.menu-list-item {
-  text-transform: uppercase;
-  padding: 0 0 0 50px;
-  font-size: 16px;
-  letter-spacing: 2px;
-}
-@media screen and (max-width: 415px) {
-  .menu-list-item {
-    padding: 0 0 60px 0;
-    width: 70%;
+@media (max-width: 415px) {
+  .menu_active {
+    -webkit-transform: translateX(0%) !important;
+            transform: translateX(0%) !important;
+    background-color: #012950 !important;
   }
 }
-.menu-list-item:first-child {
-  padding-left: 0;
-}
-.menu-list-item_link {
-  text-decoration: none;
-  color: black;
-}
-@media screen and (max-width: 415px) {
-  .menu-list-item_link {
-    font-size: 27px;
-  }
-}
-
-.logo {
-  height: 30px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-.menu-btn {
-  display: none;
-}
-
-@media screen and (max-width: 415px) {
-  .header {
-    padding: 25px 35px;
-  }
-
-  .logo_inverse {
-    margin-bottom: 100px;
-    height: 30px;
-    -o-object-fit: contain;
-       object-fit: contain;
-    margin-top: 4px;
-  }
-
-  .menu-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-
+@media (max-width: 415px) {
   .menu {
     position: fixed;
     z-index: 5;
@@ -105,50 +43,99 @@
     bottom: 0;
     padding: 35px 80px 10% 35px;
     outline: none;
-  }
-}
-@media screen and (max-width: 415px) and (max-width: 415px) {
-  .menu {
     padding: 25px 35px;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
   }
 }
-@media screen and (max-width: 415px) {
-  .menu-item {
-    color: #fff;
+.menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 72%;
+}
+@media (max-width: 415px) {
+  .menu-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
-@media screen and (max-width: 415px) and (max-width: 415px) {
+.menu-item {
+  text-transform: uppercase;
+  padding: 0 0 0 50px;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 415px) {
   .menu-item {
+    padding: 0 0 60px 0;
+    width: 70%;
+    color: #fff;
     margin-bottom: 55px;
     line-height: 35px;
     padding-bottom: 6px;
     border-bottom: 1px solid #B4C2C6;
   }
+  .menu-item::first-child {
+    padding-bottom: 50px !important;
+  }
+}
+.menu-item:first-child {
+  padding-left: 0;
+}
+.menu-item_link {
+  text-decoration: none;
+  color: black;
+  white-space: nowrap;
 }
 @media screen and (max-width: 415px) {
   .menu-item_link {
+    font-size: 27px;
+    white-space: normal;
     color: #fff;
     font-size: 30px;
     text-transform: uppercase;
-  }
-}
-@media screen and (max-width: 415px) and (max-width: 415px) {
-  .menu-item_link {
     font-size: 27px;
     text-decoration: none;
   }
 }
-@media screen and (max-width: 415px) {
-  .menu-item::first-child {
-    padding-bottom: 50px !important;
-  }
+.menu-btn {
+  display: none;
+}
 
-  .menu_active {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-    background-color: #012950 !important;
+.logo {
+  height: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.logo_inverse {
+  display: none;
+}
+@media (max-width: 415px) {
+  .logo_inverse {
+    display: block;
+    margin-bottom: 100px;
+    height: 30px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin-top: 4px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .header {
+    padding: 25px 35px;
   }
 
   .menu-btn {
